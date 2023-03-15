@@ -42,7 +42,7 @@ status = StringVar()
 # creating labels for instructing the user on what to do
 # use grid layout for better GUI layout control
 Label(master, text='First Name: ').grid(row=0, column=0)
-Label(master, text='Last Name: ').grid(row=0, column=1)
+    
 Label(master, text='Email Address: ').grid(row=2, column=0)
 Label(master, text='Password: ').grid(row=2, column=1)
 Label(master, text='', textvariable=status).grid(row=4, columnspan=2)

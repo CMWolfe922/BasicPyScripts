@@ -1,11 +1,11 @@
 import collections
 import pandas as pd
 import matplotlib.pyplot as plt
-%matplotlib inline
+# %matplotlib inline
 # Read input file, note the encoding is specified here 
 # It may be different in your text file
 file = open('PrideandPrejudice.txt', encoding="utf8")
-a= file.read()
+a = file.read()
 # Stopwords
 stopwords = set(line.strip() for line in open('stopwords.txt'))
 stopwords = stopwords.union(set(['mr','mrs','one','two','said']))
